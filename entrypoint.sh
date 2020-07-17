@@ -26,8 +26,8 @@ rm -rf .github
 cd ../
 
 echo "#### Merging Code #####"
-cp -r -u develop production
-
+cp -r -u /develop/. /production/
+ 
 cd production
 git add .
 git commit --message "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
