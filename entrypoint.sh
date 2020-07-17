@@ -13,6 +13,8 @@ git config --global user.email "$USER_EMAIL"
 git config --global user.name "$GITHUB_USERNAME"
 git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" "$CLONE_DIR"
 
+echo "$CLONE_DIR"
+
 ls -la "$CLONE_DIR"
 
 # Copy files into the git and deletes all git
