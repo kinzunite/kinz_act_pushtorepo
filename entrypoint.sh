@@ -22,6 +22,7 @@ ls
 echo "#### Cleaning Develop ####"
 cd develop
 rm -rf .git
+rm -rf .github
 cd ../
 
 echo "#### Merging Code #####"
