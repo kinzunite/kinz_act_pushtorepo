@@ -6,6 +6,7 @@ GITHUB_USERNAME="$2"
 GITHUB_REPO="$3"
 USER_EMAIL="$4"
 
+ls
 CLONE_DIR=$(mktemp -d)
 
 # Setup git
@@ -15,6 +16,7 @@ git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.gi
 
 echo "$CLONE_DIR"
 
+ls
 ls -la "$CLONE_DIR"
 
 # Copy files into the git and deletes all git
