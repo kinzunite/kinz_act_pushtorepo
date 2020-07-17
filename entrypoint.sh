@@ -31,4 +31,4 @@ cp -r -u develop production
 cd production
 git add .
 git commit --message "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
-git push origin master force
+git push origin master --force
