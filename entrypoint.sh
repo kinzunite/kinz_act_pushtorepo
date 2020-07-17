@@ -12,11 +12,12 @@ python --version
 echo "#### Get Production Repo ####"
 git config --global user.email "$USER_EMAIL"
 git config --global user.name "$GITHUB_USERNAME"
-git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" production
+git clone https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git production
 
-echo "Check Directory"
+echo "git clone https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git production"
+
+echo "#### Check Directory ####"
 ls
-
 
 echo "#### Cleaning Develop ####"
 cd develop
