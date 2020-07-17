@@ -32,7 +32,6 @@ echo "#### Work on Production #####"
 
 cd production
 python -m compileall . -q
-ls
 git add -A
 git commit --message "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
 git push origin master --force
