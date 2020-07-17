@@ -26,7 +26,7 @@ rm -rf .github
 cd ../
 
 echo "#### Merging Code #####"
-cp -r -u /develop/. /production/
+cp -r -u develop/* production
  
 cd production
 git add .
