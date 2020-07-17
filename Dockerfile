@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM PYTHON:2.7
 
 RUN apk add --no-cache git
 
