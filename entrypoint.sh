@@ -9,13 +9,14 @@ USER_EMAIL="$4"
 echo "#### Get Python Version ####"
 python --version
 
-echo "Check Directory"
-ls
-
 echo "#### Get Production Repo ####"
 git config --global user.email "$USER_EMAIL"
 git config --global user.name "$GITHUB_USERNAME"
 git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" production
+
+echo "Check Directory"
+ls
+
 
 echo "#### Cleaning Develop ####"
 cd develop
